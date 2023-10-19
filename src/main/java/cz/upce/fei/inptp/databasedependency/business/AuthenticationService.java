@@ -17,8 +17,8 @@ public class AuthenticationService {
 
     private PersonDAO persondao;
 
-    public AuthenticationService() {
-        this.persondao = new PersonDAO();
+    public AuthenticationService(PersonDAO persondao) {
+        this.persondao = persondao;
     }
 
     // TODO: add tests
