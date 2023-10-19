@@ -15,9 +15,9 @@ public class AuthorizationService {
     private PersonDAO persondao;
     private PersonRolesDAO personRolesDao;
 
-    public AuthorizationService() {
-        this.persondao = new PersonDAO();
-        this.personRolesDao = new PersonRolesDAO();
+    public AuthorizationService(PersonDAO persondao, PersonRolesDAO personRolesdao) {
+       this.persondao = persondao;
+        this.personRolesDao = personRolesdao;
     }
 
     // TODO: add tests
